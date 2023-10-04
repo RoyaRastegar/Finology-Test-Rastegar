@@ -1,9 +1,10 @@
 .nav-bar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  grid-template-columns: 1fr;
   align-items: center;
   height: 7.2rem;
   padding: 1rem 3.2rem;
   background-color: var(--color-primary);
   border-radius: 0.9rem;
+  justify-content: center;
 }
