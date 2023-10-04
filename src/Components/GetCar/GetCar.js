@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ListCar from "./ListCar";
 const GetCar = ({ quary }) => {
   const [carType, setCarType] = useState("");
   const [carMade, setCarMade] = useState("");
@@ -102,15 +102,7 @@ const GetCar = ({ quary }) => {
         </div>
         <button onSubmit={handelSubmit}>add New Car</button>
       </form>
-      {Cars.map((car, i) => (
-        <ul>
-          <div key={car.id}>
-            <li>
-              type: {car.cartype} color:{car.carcolor} id:{car.id}
-            </li>
-          </div>
-        </ul>
-      ))}
+      <ListCar Cars={Cars} />
       {searchRezult.map((x) => (
         <ul>
           <li>
