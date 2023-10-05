@@ -8,7 +8,7 @@ import { useState } from "react";
 import SearchRezult from "./Components/SearchRezult/SearchRezult";
 
 function App() {
-  const [quary, setQuary] = useState("All");
+  const [quary, setQuary] = useState("electrical");
   const [Cars, setCars] = useState([]);
 
   return (
@@ -16,9 +16,18 @@ function App() {
       <Navbar>
         <Search quary={quary} setQuary={setQuary} />
       </Navbar>
-      <GetCar quary={quary} Cars={Cars} setCars={setCars} />
-      <ListCar Cars={Cars} />
-      <SearchRezult Cars={Cars} quary={quary} />
+
+      <h2>
+        Get Car Information{" "}
+        <GetCar quary={quary} Cars={Cars} setCars={setCars} />
+      </h2>
+      <h2>
+        List Car
+        <ListCar Cars={Cars} />
+      </h2>
+      <h2>
+        Search result <SearchRezult Cars={Cars} quary={quary} />
+      </h2>
     </div>
   );
 }
