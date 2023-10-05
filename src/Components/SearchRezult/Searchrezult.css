@@ -1,0 +1,15 @@
+.search-rezult {
+  width: 700px;
+  height: 300px;
+  background-color: var(--color-primary);
+  border-radius: 7px;
+  padding: 25px 100px;
+  margin: 100px auto;
+  color: var(--color-text);
+}
+.search-rezult div {
+  display: flex;
+  font-size: 20px;
+  gap: 20px;
+  padding-bottom: 2rem;
+}
