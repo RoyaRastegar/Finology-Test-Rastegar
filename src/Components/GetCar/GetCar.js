@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import ListCar from "./ListCar";
-const GetCar = ({ quary }) => {
+import "./GetCar.css";
+const GetCar = ({ Cars, setCars }) => {
   const [carType, setCarType] = useState("");
   const [carMade, setCarMade] = useState("");
   const [carColor, setCarColor] = useState("white");
-  const [Cars, setCars] = useState([]);
 
   function handelCarTypeChange(e) {
     setCarType(e.target.value);
@@ -32,12 +31,8 @@ const GetCar = ({ quary }) => {
     setCarMade("");
     setCarType("");
   }
-  console.log(quary);
-  console.log(Cars.filter((car) => car.cartype === quary));
-  const searchRezult = Cars.filter((car) => car.cartype === quary);
-  // const searchresult = Cars.filter((car) => car.cartype === quary);
   return (
-    <div>
+    <div className="getcar">
       <form onSubmit={handelSubmit}>
         <div>
           <label>Car Type:</label>
@@ -102,14 +97,6 @@ const GetCar = ({ quary }) => {
         </div>
         <button onSubmit={handelSubmit}>add New Car</button>
       </form>
-      <ListCar Cars={Cars} />
-      {searchRezult.map((x) => (
-        <ul>
-          <li>
-            {x.cartype} {x.carmade}
-          </li>
-        </ul>
-      ))}
     </div>
   );
 };

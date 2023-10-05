@@ -4,7 +4,7 @@ const Car = ({ car }) => {
   return (
     <div>
       <li>
-        type: {car.cartype} color:{car.carcolor} id:{car.id}
+        Type: {car.cartype} , Made: {car.carmade} , Color: {car.carcolor}
       </li>
     </div>
   );

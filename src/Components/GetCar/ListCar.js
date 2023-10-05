@@ -2,7 +2,7 @@ import React from "react";
 import Car from "./Car";
 const ListCar = ({ Cars }) => {
   return (
-    <div>
+    <div className="list-car">
       {Cars.map((car, i) => (
         <ul>
           <Car key={car.id} car={car} />

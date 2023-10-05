@@ -1,0 +1,65 @@
+.getcar {
+  width: 700px;
+  height: 300px;
+  background-color: var(--color-primary);
+  border-radius: 7px;
+  padding: 25px 100px;
+  margin: 100px auto;
+  color: var(--color-text);
+}
+.getcar div {
+  display: flex;
+  font-size: 20px;
+  gap: 20px;
+  padding-bottom: 2rem;
+}
+.getcar select {
+  justify-self: center;
+  border: none;
+  padding: 1.1rem 1.6rem;
+  font-size: 1.8rem;
+  border-radius: 0.7rem;
+  width: 15rem;
+  transition: all 0.3s;
+  color: var(--color-text);
+  background-color: var(--color-primary-light);
+  text-align: center;
+}
+.getcar::placeholder {
+  color: var(--color-text-dark);
+}
+
+.getcar:focus {
+  outline: none;
+  box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.getcar button {
+  border: none;
+  padding: 1.1rem 1.6rem;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  font-size: 1.8rem;
+  border-radius: 0.7rem;
+  width: 15rem;
+  transition: all 0.3s;
+  color: var(--color-text);
+  background-color: var(--color-primary-light);
+  text-align: center;
+}
+.list-car {
+  width: 700px;
+  height: 400px;
+  background-color: var(--color-primary);
+  border-radius: 7px;
+  padding: 25px 100px;
+  margin: 100px auto;
+  color: var(--color-text);
+  overflow: scroll;
+}
+.list-car div {
+  display: flex;
+  font-size: 20px;
+  gap: 20px;
+  padding-bottom: 2rem;
+}
